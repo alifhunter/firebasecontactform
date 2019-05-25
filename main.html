@@ -1,0 +1,69 @@
+<!-- 25/5/2019 Febrian Alif P -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Contact form with firebase</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-8 offset-xl-2 py-5">
+        <h1>Contact form</h1>
+        <p class="lead">Contact form using Firebase by Google.</p>
+        <!-- start form -->
+        <form id="contactForm">
+          <div class="message"></div>
+          <!-- name input -->
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Name</label>
+                <input class="form-control" type="text" name="name" id="name" placeholder="Enter your name...">
+              </div>
+            </div>
+          </div>
+          <!-- email input -->
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Email</label>
+                <input class="form-control" type="email" name="email" id="email" placeholder="Enter your email...">
+              </div>
+            </div>
+          </div>
+          <!-- message input -->
+          <div class="row">
+            <div class="col-md-12">
+              <div class="form-group">
+                <label>Message</label>
+                <textarea class="form-control" type="email" name="message" id="message" placeholder="What's on your mind?"></textarea>
+              </div>
+            </div>
+            <!-- submit btn -->
+            <div class="col-md-12">
+              <input class="btn btn-success btn-send" type="submit" value="Contact us">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+                <p class="text-muted">"contact form using google firebase."</p>
+                <a class="lead" href="/show.html">see messages...</a>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- javascript -->
+  <!-- firebase js on top of every other js -->
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+  <script src="contactform.js"></script>
+</body>
+</html>
